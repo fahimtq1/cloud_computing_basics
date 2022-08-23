@@ -1,4 +1,4 @@
-# Cloud Computing, Two-Tier Architecture and Deployment on AWS EC2 instance
+# Cloud Computing
 
 Please see this [link](https://github.com/fahimtq1/virtualisation_basics/blob/main/PROJECT.md) for a description on the application that will be deployed in this project.
 
@@ -92,3 +92,24 @@ In this project, the tiers are contained in each EC2 instance: app and db.
 - Install mongoDB
 - Configure the mongod.conf file to allow all IP's
 - The app should work!
+
+## Disaster Recovery Plan (DR)
+
+These plans are made in case of any unexpected disaster, so that there is a backup available for a web application. There are multiple ways of doing this:
+
+- Multiple Availability Zones
+
+On AWS, within a region, there are multiple zones (data centres) that an application can be deployed.
+
+- Multiple Regions
+
+There are multiple regions in which an application can be deployed. This DR is more expensive than the multiple availability zones method. 
+
+- Multiple Cloud Deployment
+
+This is the most expensive method, as it has different cloud computing service providers as backups.
+
+- Hybrid Cloud
+
+This is a mixture between a public cloud and private cloud model. 
+
