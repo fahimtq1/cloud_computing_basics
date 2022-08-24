@@ -180,7 +180,7 @@ s3.download_file('eng122_fahim', 'fahim_test.txt', 'fahim_test.txt')
 # Deleting from a bucket
 import boto3
 s3 = boto3.resource('s3')
-s3.Object('eng122_fahim', 'your-key').delete()
+s3.Object('eng122_fahim', 'fahim_test.txt').delete()
 ```
 
 ```python
