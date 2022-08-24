@@ -93,6 +93,10 @@ In this project, the tiers are contained in each EC2 instance: app and db.
 - Configure the mongod.conf file to allow all IP's
 - The app should work!
 
+## Provisioning an EC2 Instance
+
+At the bottom of the configure instance details section, under user details, you can add a provisioning script. Start the script with `#!/bin/bash`. You can then add a provisioning script to automate the configuration of your instance.
+
 ## Disaster Recovery Plan (DR)
 
 These plans are made in case of any unexpected disaster, so that there is a backup available for a web application. There are multiple ways of doing this:
