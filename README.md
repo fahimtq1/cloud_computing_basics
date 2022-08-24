@@ -99,6 +99,10 @@ At the bottom of the configure instance details section, under user details, you
 
 ## Disaster Recovery Plan (DR)
 
+![s3_ting](https://user-images.githubusercontent.com/99980305/186370133-0505c9fb-451b-442b-95e7-6bd886b2a864.png)
+
+### Example Plans
+
 These plans are made in case of any unexpected disaster, so that there is a backup available for a web application. There are multiple ways of doing this:
 
 - Multiple Availability Zones
