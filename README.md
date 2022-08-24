@@ -143,3 +143,63 @@ An effective recovery plan is carried out using CRUD:
 - `sudo apt install python3-pip`- installing pip3
 - `sudo pip3 install awscli`- installing awscli with python
 - `pip3 install boto3`- installing boto3
+
+```python
+# Creating a bucket
+import boto3
+
+# using s3
+s3 = boto3.resource('s3')
+
+# making a bucket
+s3.create_bucket(Bucket='eng122_fahim', CreateBucketConfiguration={
+    'LocationConstraint': 'eu-west-1'})
+```
+
+```python
+# Uploading a file to a bucket
+import boto3
+
+# using s3  
+s3 = boto3.resource('s3')
+
+# Upload a new file
+data = open('fahim_test.jpg', 'rb')
+s3.Bucket('eng122_fahim').put_object(Key='fahim_test.jpg', Body=data)
+```
+
+```python
+# Downloading a file from the bucket
+import boto3
+
+s3 = boto3.client('s3')
+s3.download_file('eng122_fahim', 'fahim_test.txt', 'fahim_test.txt')
+```
+
+```python
+# Deleting from a bucket
+import boto3
+s3 = boto3.resource('s3')
+s3.Object('eng122_fahim', 'your-key').delete()
+```
+
+```python
+# Deleting a bucket
+import boto3    
+s3 = boto3.resource('s3')
+bucket = s3.Bucket('eng122_fahim')
+bucket.delete()
+```
+
+```python 
+# Listing everything within the bucket
+import boto3
+
+# Let's use Amazon S3    
+s3 = boto3.resource('s3')
+
+# Print out bucket names
+for bucket in s3.buckets.all():
+    print(bucket.name)
+```
+    
