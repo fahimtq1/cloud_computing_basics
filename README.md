@@ -121,7 +121,7 @@ This is a mixture between a public cloud and private cloud model.
 
 ### S3 Backup
 
-![s3_ting](https://user-images.githubusercontent.com/99980305/186370133-0505c9fb-451b-442b-95e7-6bd886b2a864.png)
+![s3_ting](https://user-images.githubusercontent.com/99980305/186377748-d4895f29-3757-4b67-9bc7-688c916419f2.png)
 
 An effective recovery plan is carried out using CRUD:
 
