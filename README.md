@@ -99,8 +99,6 @@ At the bottom of the configure instance details section, under user details, you
 
 ## Disaster Recovery Plan (DR)
 
-![s3_ting](https://user-images.githubusercontent.com/99980305/186370133-0505c9fb-451b-442b-95e7-6bd886b2a864.png)
-
 ### Example Plans
 
 These plans are made in case of any unexpected disaster, so that there is a backup available for a web application. There are multiple ways of doing this:
@@ -120,4 +118,15 @@ This is the most expensive method, as it has different cloud computing service p
 - Hybrid Cloud
 
 This is a mixture between a public cloud and private cloud model. 
+
+### S3 Backup
+
+![s3_ting](https://user-images.githubusercontent.com/99980305/186370133-0505c9fb-451b-442b-95e7-6bd886b2a864.png)
+
+An effective recovery plan is carried out using CRUD:
+
+- Create
+- Read
+- Update
+- Delete
 
