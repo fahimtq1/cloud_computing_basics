@@ -130,3 +130,16 @@ An effective recovery plan is carried out using CRUD:
 - Update
 - Delete
 
+#### S3 Commands from EC2 Instance
+
+- `aws s3 ls`- lists all buckets in S3 instance
+- `aws s3 mb s3://bucket-name`- create a bucket
+- `aws s3 cp file-name s3://bucket-name/file-name`- copying a file from EC2 instance to S3 - can do the opposite format for copying a file from S3 to EC2 instance
+- `aws s3 rb s3://bucket-name --force`- delete a bucket
+
+#### S3 Tasks with Python Boto3
+
+- `sudo apt-get install python3 -y`- installing python
+- `sudo apt install python3-pip`- installing pip3
+- `sudo pip3 install awscli`- installing awscli with python
+- `pip3 install boto3`- installing boto3
