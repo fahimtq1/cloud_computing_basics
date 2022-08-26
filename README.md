@@ -15,29 +15,29 @@ Cloud computing is the delivery of on-demand computing services over the interne
 
 ## Deployment Model 
 
-- Public Cloud
+### Public Cloud
 
 The cloud infrastructure is available to the public over the internet and is owned by a service provider.
 
-- Private Cloud
+### Private Cloud
 
 The cloud infrastructure is operated and owned by a single organisation.
 
-- Hybrid Cloud
+### Hybrid Cloud
 
 The cloud infrastructure is a mixture of both the public cloud and the private cloud. 
 
 ## Service Model 
 
-- Infrastructe as a Service (IaaS)
+### Infrastructe as a Service (IaaS)
 
 This service provides users access to basic computing infrastructure (servers and storage), so virtualisation can occur. The rest of the components are managed by the user.
 
-- Platform as a Service (PaaS)
+### Platform as a Service (PaaS)
 
 The service provider provides the necessary components for a cloud-based development environment, so that developers can conduct the developing, testing and managing of an application. 
 
-- Software as a Service (SaaS)
+### Software as a Service (SaaS)
 
 In this case, the service provider handles all the components of a complete cloud computing environment, including the hosting and managing of a software application.
 
@@ -47,11 +47,11 @@ In this case, the service provider handles all the components of a complete clou
 
 ### What is AWS?
 
-AWS is a cloud computing platform. It provides: Infrastructure as a Service (IaaS), Platform as a Service (PaaS) and Software as a Service (SaaS). AWS is mainly used in DevOps practices as IaaS. 
+AWS is a cloud computing sevice provider; the world's largest cloud computing service provider. It provides: Infrastructure as a Service (IaaS), Platform as a Service (PaaS) and Software as a Service (SaaS).
 
 ### What is EC2?
 
-EC2 is the AWS version of a Virtual Machine. 
+EC2 is a AWS service which provides the user an instance of a Virtual Machine. 
 
 ### Deploying the Sparta App
 
@@ -103,19 +103,19 @@ At the bottom of the configure instance details section, under user details, you
 
 These plans are made in case of any unexpected disaster, so that there is a backup available for a web application. There are multiple ways of doing this:
 
-- Multiple Availability Zones
+#### Multiple Availability Zones
 
 On AWS, within a region, there are multiple zones (data centres) that an application can be deployed.
 
-- Multiple Regions
+#### Multiple Regions
 
 There are multiple regions in which an application can be deployed. This DR is more expensive than the multiple availability zones method. 
 
-- Multiple Cloud Deployment
+#### Multiple Cloud Deployment
 
 This is the most expensive method, as it has different cloud computing service providers as backups.
 
-- Hybrid Cloud
+#### Hybrid Cloud
 
 This is a mixture between a public cloud and private cloud model. 
 
