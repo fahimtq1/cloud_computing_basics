@@ -10,8 +10,8 @@ EC2 is a AWS service which provides the user an instance of a Virtual Machine on
 
 - Navigate to EC2 page on AWS account (after logging in and selecting the correct region)
 - Launch a new instance
-- Select the desired OS
-- Choose the instance type
+- Select the desired OS- Ubuntu 18.04
+- Choose the instance type- default
 - Configure the instance Public IP to be enabled and the other desired settings
 - Add the default storage
 - Add a tag: Key=Name and Value=eng122_fahim_app
