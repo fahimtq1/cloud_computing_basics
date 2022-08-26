@@ -1,10 +1,10 @@
+# What is EC2?
+
+EC2 is a AWS service which provides the user an instance of a Virtual Machine. 
+
 ## Deploying the app on an EC2 instance
 
 ![AWS](https://user-images.githubusercontent.com/99980305/185410653-905abb9c-7d31-4bad-99d5-8d9e256bbcee.png)
-
-### What is EC2?
-
-EC2 is a AWS service which provides the user an instance of a Virtual Machine. 
 
 ### Deploying the Sparta App
 
