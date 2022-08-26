@@ -55,3 +55,62 @@ Alerts are informational records used to monitor systems to assess current or up
 - Preparing for alerts
 - Processing alerts once they occur
 - Responding to alerts after they occur
+
+## Logs
+
+See [this documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/QuickStartEC2Instance.html)
+
+CloudWatch Logs agent provide an automated method of sending log data to CloudWatch Logs from Amazon EC2 instances.
+
+These steps will demonstrate how to configure the CloudWatch Logs agent on an EC2 instance that runs Linux:
+
+- `curl https://s3.amazonaws.com//aws-cloudwatch/downloads/latest/awslogs-agent-setup.py -O`- installs log agent
+- `sudo python ./awslogs-agent-setup.py --region eu-west-1`- configures the log agent with a log group and log stream
+- Event are then logged within the configured log stream dashboard on AWS
+
+### Exporting logs to S3 bucket
+
+See [this documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/S3ExportTasksConsole.html) to change the permissions of an S3 bucket. 
+
+It is sufficient to follow these steps as found in the documentation:
+
+- Choose your bucket in the S3 console
+- Navigate to Permissions -> Bucket policy
+- In the Bucket Policy Editor, add:
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "logs.eu-west-1.amazonaws.com"   # specify correct region
+            },
+            "Action": "s3:GetBucketAcl",
+            "Resource": "arn:aws:s3:::name-of-bucket"
+        },
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "logs.eu-west-1.amazonaws.com"
+            },
+            "Action": "s3:PutObject",
+            "Resource": "arn:aws:s3:::name-of-string/random-string/*",
+            "Condition": {
+                "StringEquals": {
+                    "s3:x-amz-acl": "bucket-owner-full-control"
+                }
+            }
+        }
+    ]
+}
+'''
+
+With the correct permissions applied, the log events can now be exported to the S3 bucket:
+
+- Navigate to the CloudWatch console
+- Select Log groups
+- Navigate to Actions -> Export data to Amazon S3
+- On this page, select the relevant settings (from and to times and the name of the bucket)
+- Select Export
