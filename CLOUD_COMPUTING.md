@@ -6,6 +6,13 @@ Please see this [link](https://github.com/fahimtq1/virtualisation_basics/blob/ma
 
 Cloud computing is the delivery of on-demand computing services over the internet. There are two cloud computing models: the deployment model and the services model. There are three main cloud computing service providers: Amazon Web Services (AWS), Microsoft Azure and Google Cloud Platform (GCP). 
 
+## Four Pillars of Cloud Computing
+
+- Ease of use
+- Robustness
+- Flexibility
+- Cost
+
 ## Benefits
 
 - Scalability- easier, faster and cheaper provisions for scaling up and down 
