@@ -1,6 +1,6 @@
 # What is EC2?
 
-EC2 is a AWS service which provides the user an instance of a Virtual Machine. 
+EC2 is a AWS service which provides the user an instance of a Virtual Machine on a pay-as-you-go basis. 
 
 ## Deploying the app on an EC2 instance
 
